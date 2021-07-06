@@ -11,8 +11,12 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
-
+    let splitString = str.split("");
+    let reverseArray  = splitString.reverse();
+    var joinArray = reverseArray.join("");
+    return joinArray;
 };
+reverseString("Hello World");
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -31,12 +35,16 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
+    arr.splice(3, 0, 'd');
+    return arr;
+
 };
 
-/* ------------------------------------------------------------------------------------------------
+return (arr)
+/* ------------------------------------------------------------------------------------,------------
 TESTS
 
-All the code below will verify that your functions are working to solve the challenges.
+All the code below will verify that your unctions are working to solve the challenges.
 
 DO NOT CHANGE any of the below code.
 
